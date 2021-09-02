@@ -1,7 +1,7 @@
 app:
     name: Wordpress
     code: WORDPRESS
-    notify: appzdev@cloudbourne.co
+    notify: pchandran@ecloudcontrol.com
     
 build:
     version: 5.8
@@ -17,12 +17,18 @@ deploy:
     replicas: 1
     port:
     - 443
-  
+    
 volumes:
-- claim: wordpress-data
-  mount: /var/www/html/wp-content/uploads
-  name: uploads
-  size: 5Gi   
+  - claim: wordpress-5-4-data-dev
+    mount: /var/www/html/wp-content/uploads
+    name: data
+    size: 5Gi
+    class: local-storage
+    mode: ReadWriteOnce
+    
+monitor:
+    notify: pchandran@ecloudcontrol.com
+     
   
 properties:
   ENABLE_HA: "no"  
