@@ -1,21 +1,22 @@
 app:
-  name: wordpress
-  code: wordpress
-  notify: pchandran@ecloudcontrol.com
-
+    name: Wordpress
+    code: WORDPRESS
+    notify: appzdev@cloudbourne.co
+    
 build:
-  version: 5.5
-  env: DEV
-  build_file: none
-  output_files: output/*.zip
-  image_template: wordpress-5.8
-
+    version: 5.8
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: wordpress-5.8
+    image_name: myco/wordpress
+    
 deploy:
-  context: myco/DEV
-  replicas: 1
-  type: statefulset
-  port:
-  - 80
+    context: myco/DEV
+    type:  statefulset
+    replicas: 1
+    port:
+    - 443
   
 volumes:
 - claim: wordpress-data
