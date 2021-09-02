@@ -8,10 +8,10 @@ build:
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: wordpress-5.5
+  image_template: wordpress-5.8
 
 deploy:
-  context: pradeepchandran0/DEV
+  context: myco/DEV
   replicas: 1
   type: statefulset
   port:
@@ -22,15 +22,11 @@ volumes:
   mount: /var/www/html/wp-content/uploads
   name: uploads
   size: 5Gi   
-- claim: wordpress-backup
-  mount: /appz/backup
-  name: backup
-  size: 5Gi 
   
 properties:
   ENABLE_HA: "no"  
   #if HA is disabled
-  MYSQL_HOST : "mariadb-master-10-4:3306"
+  MYSQL_HOST : "mariadb-10-4:3306"
   #if HA is enabled
   #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
   #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
@@ -38,9 +34,9 @@ properties:
   MYSQL_DATABASE: wordpress
   ADMIN_USER: wpadmin
   ADMIN_EMAIL: pchandran@ecloudcontrol.com
-  SITE_TITLE: "Wordpress AppZ Workshop Demo"
+  SITE_TITLE: "Wordpress 5.8 AppZ SEO"
   MYSQL_PASSWORD:
      vault: MYSQL_PASSWORD_KEY
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
-  ADMIN_PASSWORD_HASH: $P$Bfwz4AJ/aeYvcY/XMHcs7XArrZs8U8/
+  ADMIN_PASSWORD_HASH: $P$BsCHEfZk4RsuoJR5.hVGGNfJTPNC5y1
   revision : 82
