@@ -19,7 +19,7 @@ deploy:
     - 443
     
 volumes:
-  - claim: wordpress-5-4-data-dev
+  - claim: wordpress-5-8-data-dev
     mount: /var/www/html/wp-content/uploads
     name: data
     size: 5Gi
