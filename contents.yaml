@@ -1,8 +1,11 @@
 ---
 theme:
-    name: brite
-    url: https://www.ecloudcontrol.com/wp-content/uploads/2021/09/brite.1.0.4.zip
-    
+    #name: brite
+    #url: https://www.ecloudcontrol.com/wp-content/uploads/2021/09/brite.1.0.4.zip
+    name: cloudpress
+    url: https://www.ecloudcontrol.com/wp-content/uploads/2021/09/cloudpress.2.4.5.zip
+    name: cloudpress-dark
+    url: https://www.ecloudcontrol.com/wp-content/uploads/2021/09/cloudpress-dark.0.1.zip
     #name: magazine-news-byte-premium
     #url: https://www.ecloudcontrol.com/wp-content/uploads/2020/07/magazine-news-byte-premium-2-9-2.zip
 plugins:
