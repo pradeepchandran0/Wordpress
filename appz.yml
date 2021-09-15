@@ -34,7 +34,7 @@ properties:
   ENABLE_HA: "no"  
   #if HA is disabled
   MYSQL_HOST : "mariadb-10-4:3306"
-  SITE_URL: ecs-website-staging.lowtouch.cloud
+  SITE_URL : "https://ecs-website-staging.lowtouch.cloud"
   #if HA is enabled
   #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
   #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
