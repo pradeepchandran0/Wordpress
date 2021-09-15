@@ -1,5 +1,7 @@
 ---
 theme:
+    name: cloudpress
+    url: https://www.ecloudcontrol.com/wp-content/uploads/2021/09/cloudpress.2.4.5.zip
     name: cloudpress-dark
     url: https://www.ecloudcontrol.com/wp-content/uploads/2021/09/cloudpress-dark.0.1.zip
     #name: magazine-news-byte-premium
