@@ -4,6 +4,7 @@ theme:
     url: https://www.ecloudcontrol.com/wp-content/uploads/2021/09/brite.1.0.4.zip
     #name: magazine-news-byte-premium
     #url: https://www.ecloudcontrol.com/wp-content/uploads/2020/07/magazine-news-byte-premium-2-9-2.zip
+    
 plugins:
    - https://www.ecloudcontrol.com/wp-content/uploads/2020/06/fusion-core-4.2.3.zip
    - https://www.ecloudcontrol.com/wp-content/uploads/2020/06/fusion-builder-2.2.3.zip
